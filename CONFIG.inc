@@ -7,9 +7,9 @@ TARGETBINDIR="$TARGETDIR/Plugins"
 PROJECTSDIR="Source/$PACKAGE/"
 VERSIONFILE="$PACKAGE.version"
 
-DLLS="TweakScaleCompanion_Legacy TweakScalerModuleFuelTanks"
+DLLS="TweakScaleCompanion_Legacy"
 # PluginData DLLs
-PD_DLLS="TweakScalerModuleFuelTanksRescalable"
+PD_DLLS=""
 # Rule oriented deployoment for PluginData
 declare -A PD_SUB__RULES=( )
 PD_SUB_DLLS=`{ for K in "${!PD_SUB_RULES[@]}"; do echo $(basename ${PD_SUB_RULES[$K]}); done } | sort -u | tr '\n' ' '`
